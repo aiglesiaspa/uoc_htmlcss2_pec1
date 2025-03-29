@@ -5,15 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Xató de El Vendrell</title>
   </head>
   <body>
+
+    <!--
     <div class="uoc-container">
       <picture>
         <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
         <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
       </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
+      <h1 class="uoc-title"><i class="fas fa-university"></i>Hello, UOC!</h1>
       <p>
         This is a starter template for the Advanced HTML and CSS Tools courses
         from the Master's Program in Multimedia Applications and the Master's
@@ -21,7 +23,105 @@
         Catalunya.
       </p>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    -->
+
+  <header class="header">
+    <h1 class="header__titulo">El Xató de El Vendrell</h1>
+  </header>
+
+  <!-- section -->
+  <section class="section">
+    <h2 class="section__titulo">¿Qué es el "Xató"?</h2>
+    <p class="section__descripcion">El xató es una receta tradicional de la comarca del Baix Penedès y especialmente popular en El Vendrell. Se trata de una ensalada fresca y sabrosa que combina ingredientes del mar y la tierra con una salsa especial que le da su sabor característico.</p>
+    <p class="section__descripcion">El xató tiene sus raíces en las zonas vinícolas, donde era el plato típico de las celebraciones en las que se probaba el primer vino de la temporada. Su nombre proviene de la palabra catalana "aixetonar", que hace referencia al acto de colocar el grifo en las barricas de vino, conocidas como "aixeta" en catalán. En estas festividades, se elaboraba esta ensalada como parte de la tradición de inaugurar el consumo del nuevo vino.</p>
+    <p class="section__descripcion">Lo que distingue al xató o xatonada es su inconfundible salsa, que aporta tanto el nombre como el sabor característico al plato. Sus ingredientes principales son los frutos secos, el ajo y la ñora, también conocida como pimiento de romesco. Aunque se asemeja a la popular salsa romesco, que suele acompañar a los calçots, no es exactamente la misma.</p>
+    
+    <figure class="section__imagen-container">
+      <img src="./assets/images/xato.webp?width=500" alt="Plato de Xató" class="section__imagen">
+      <figcaption class="section__fuente">
+        Imagen de ChupChupChup. Fuente: 
+        <a href="https://www.chupchupchup.com/2015/03/xatonada.html" target="_blank">
+          chupchupchup.com
+        </a>, bajo licencia CC BY-NC-ND 4.0.
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- INGREDIENTES -->
+  <section class="section ingredientes" id="ingredientes">
+    <h2 class="section__titulo">Ingredientes del plato (2 personas) <i class="fa fa-shopping-basket" aria-hidden="true"></i></h2>
+    <ul class="ingredientes__lista">
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 1 escarola</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 2 filetes de anchoa</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 80 gramos de bacalao desalado</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 75 gramos de atún en conserva</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 40 gramos (12 unidades) de aceitunas arbequinas</li>
+    </ul>
+  </section>
+
+    <!-- INGREDIENTES SALSA -->
+  <section class="section ingredientes">
+    <h2 class="section__titulo">Ingredientes de la salsa (2 personas) <i class="fa fa-shopping-basket" aria-hidden="true"></i></h2>
+    <ul class="ingredientes__lista">
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 1 ñora escaldada</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 1 rebanada de pan</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 1/2 cebolla escalivada</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 3 tomates escalivados</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 100g de almendras</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> 80g de avellanas</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> Pimiento rojo</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> Aceite de oliva virgen extra</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> Vinagre</li>
+      <li class="ingredientes__item"><i class="fa fa-square" aria-hidden="true"></i> Sal</li>
+      
+    </ul>
+  </section>
+
+  <!-- PREPARACION -->
+  <section class="section">
+    <h2 class="section__titulo">Preparación del plato <i class="fa fa-cutlery" aria-hidden="true"></i></h2>
+    <p class="section__descripcion">Para preparar la salsa xató, primero se debe escaldar la ñora en agua caliente durante unos minutos, retirar la pulpa y reservar. Luego, se tuesta la rebanada de pan hasta que esté dorada. En un mortero o procesador de alimentos, se trituran las almendras, las avellanas, la pulpa de la ñora y el pan tostado. Posteriormente, se añaden la cebolla y los tomates escalivados, junto con un poco de pimiento rojo. Se incorpora el vinagre y la sal al gusto, y finalmente se emulsiona la mezcla agregando el aceite de oliva virgen extra poco a poco hasta obtener una salsa homogénea y cremosa. Se puede añadir un poco de pimentón para potenciar el sabor.</p>
+    <p class="section__descripcion">Para la ensalada, se debe lavar y escurrir bien la escarola. En un bol grande, se mezcla la escarola con el bacalao desalado, el atún, las anchoas y las aceitunas arbequinas.</p>
+    <p class="section__descripcion">El montaje del plato consiste en aliñar la ensalada con la salsa xató justo antes de servir, asegurándose de que todos los ingredientes queden bien impregnados con la salsa. Se puede acompañar con tostadas de pan para darle un toque crujiente adicional.</p>
+  </section>
+
+    <!-- REFERENCIAS -->
+  <section class="section referencias">
+    <h2 class="section__titulo">Referencias</h2>
+    <ul class="referencias__lista">
+      <li class="referencias__item">
+        La Vanguardia. <i>"Ensalada Xató: Receta de los platos típicos de la cocina catalana."</i>  
+        Disponible en:  
+        <a href="https://www.lavanguardia.com/comer/recetas/20220609/8325712/ensalada-xato-receta-platos-tipicos-cocina-catalana.html" target="_blank">
+          lavanguardia.com
+        </a>
+      </li>
+      <li class="referencias__item">
+        El Vendrell Turisme. <i>"Productos típicos de El Vendrell."</i>  
+        Disponible en:  
+        <a href="https://www.elvendrellturisme.com/es/productos-tipicos-del-vendrell/" target="_blank">
+          elvendrellturisme.com
+        </a>
+      </li>
+      <li class="referencias__item">
+        Maset. <i>"Receta del Xató de El Vendrell."</i>  
+        Disponible en:  
+        <a href="https://www.maset.com/es/blog/receta-xato-del-vendrell" target="_blank">
+          maset.com
+        </a>
+      </li>
+      <li class="referencias__item">
+        ChupChupChup. <i>"Xatonada."</i>  
+        Disponible en:  
+        <a href="https://www.chupchupchup.com/2015/03/xatonada.html" target="_blank">
+          chupchupchup.com
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+
   </body>
 </html>

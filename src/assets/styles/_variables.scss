@@ -1,5 +1,6 @@
 @use "sass:color";
 
+/**
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
@@ -10,3 +11,28 @@ $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
+**/
+
+$primary-color: #236900;
+$secondary-color: #fff;
+$font-family: 'Arial', sans-serif;
+$font-size-base: 16px;
+$font-size-heading: 2rem;
+
+// FUNCION PX A REM
+@function rem($px) {
+  @return calc($px / 16) * 1rem; // Conversion explicita o sale error
+}
+
+// FUNCION PARA MEDIA QUERIES Y CONTROLAR EL TAMAÑO AQUI
+@mixin media-query($device) {
+  @if $device == 'mobile' {
+    @media (max-width: 767px) { @content; }
+  } 
+  @else if $device == 'tablet' {
+    @media (min-width: 768px) and (max-width: 1024px) { @content; }
+  } 
+  @else if $device == 'desktop' {
+    @media (min-width: 1025px) { @content; } // PC Y TABLETS GRANDES
+  }
+}

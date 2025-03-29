@@ -11,6 +11,6 @@
  */
 
 +( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
+  const word = "Xatonaires";
+  console.log(`Hello, ${word}!`);
 } )();
